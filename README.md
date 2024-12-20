@@ -106,7 +106,15 @@ kubelet: Running
 apiserver: Running
 kubeconfig: Configured
 
-
+```
+alias k=kubectl                         # will already be pre-configured
+```
+```
+export do="--dry-run=client -o yaml"    # k get pod x $do
+```
+```
+export now="--force --grace-period 0"   # k delete pod x $now
+```
 | BUG  | FIX |
 | ------------- | ------------- |
 | Failed to start docker container. Running "minikube delete" may fix it: boot lock: unable to open /tmp/juju-mke11f63b5835bf422927bf558fccac7a21a838f: permission denied  | ``` minikube delete ```  |
