@@ -109,7 +109,7 @@ kubeconfig: Configured
 
 | BUG  | FIX |
 | ------------- | ------------- |
-| Failed to start docker container. Running "minikube delete" may fix it: boot lock: unable to open /tmp/juju-mke11f63b5835bf422927bf558fccac7a21a838f: permission denied  | minikube delete  |
+| Failed to start docker container. Running "minikube delete" may fix it: boot lock: unable to open /tmp/juju-mke11f63b5835bf422927bf558fccac7a21a838f: permission denied  | ``` minikube delete ```  |
 
 
 
