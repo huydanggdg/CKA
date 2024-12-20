@@ -107,9 +107,12 @@ apiserver: Running
 kubeconfig: Configured
 
 
-Failed to start docker container. Running "minikube delete" may fix it: boot lock: unable to open /tmp/juju-mke11f63b5835bf422927bf558fccac7a21a838f: permission denied
-=> minikube delete
+| BUG  | FIX |
+| ------------- | ------------- |
+| Failed to start docker container. Running "minikube delete" may fix it: boot lock: unable to open /tmp/juju-mke11f63b5835bf422927bf558fccac7a21a838f: permission denied  | minikube delete  |
 
-Link tham khảo:
+
+
+Link ref:
 https://medium.com/@areesmoon/installing-docker-on-ubuntu-20-04-lts-focal-fossa-be807a50d16f
 https://medium.com/@areesmoon/installing-minikube-on-ubuntu-20-04-lts-focal-fossa-b10fad9d0511
