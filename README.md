@@ -7,45 +7,65 @@ Step 1: Updating system packages
 ```
 sudo apt update 
 ```
-<code> sudo apt install apt-transport-https curl </code>
+
+```
+sudo apt install apt-transport-https curl
+```
 
 Step 2. Installing Docker
-
+```
 sudo apt install docker.io
-
+```
 Step 3. Installing Docker’s service
-
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
-
+```
+sudo systemctl enable docker
+```
+```
+sudo systemctl start docker
+```
 Step 4. Verifying Docker installation
-
-$ docker --version
+```
+docker --version
+```
 Docker version 20.10.21, build 20.10.21-0ubuntu1~20.04.2
 
 =========================Installing Minikube on Ubuntu 20.04 LTS===================================
 
 Step 5. Updating system packages and installing Minikube dependencies
-
-$ sudo apt update
-$ sudo apt install -y curl wget apt-transport-https
-
+```
+sudo apt update
+```
+```
+sudo apt install -y curl wget apt-transport-https
+```
 Step 6. Installing Minikube
-
-$ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-$ sudo install minikube-linux-amd64 /usr/local/bin/minikube
-$ minikube version
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+```
+```
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+```
+```
+minikube version
+```
 minikube version: v1.32.0
 commit: 8220a6eb95f0a4d75f7f2d7b14cef975f050512d
 
 Step 7. Installing kubectl utility
-
-$ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-$ chmod +x kubectl
-$ sudo mv kubectl /usr/local/bin/
-
+```
+curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+```
+```
+chmod +x kubectl
+```
+```
+sudo mv kubectl /usr/local/bin/
+```
 Now, verify the kubectl version
-$ kubectl version -o yaml
+
+```
+kubectl version -o yaml
+```
 clientVersion:
  buildDate: "2023–11–15T16:58:22Z"
  compiler: gc
@@ -69,13 +89,16 @@ serverVersion:
  platform: linux/amd64
  
 Step 8. Starting Minikube
-
-$ minikube start --driver=docker --force
-
-$ minikube start --nodes 2 --driver=docker --force
-
+```
+minikube start --driver=docker --force
+```
+```
+minikube start --nodes 2 --driver=docker --force
+```
 Step 9. Verifying Installation
-$ minikube status
+```
+minikube status
+```
 minikube
 type: Control Plane
 host: Running
