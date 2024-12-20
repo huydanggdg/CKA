@@ -3,7 +3,10 @@ Installing Minikube on Ubuntu 20.04 LTS
 =========================Installing Docker on Ubuntu 20.04 LTS===================================
 
 Step 1: Updating system packages
-<code> sudo apt update </code>
+
+<code> 
+sudo apt update 
+</code>
 <code> sudo apt install apt-transport-https curl </code>
 
 Step 2. Installing Docker
