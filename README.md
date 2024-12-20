@@ -93,7 +93,7 @@ Step 8. Starting Minikube
 minikube start --driver=docker --force
 ```
 ```
-minikube start --driver=docker --nodes 2 --force
+minikube start --nodes 2 -p multinode-demo --driver=docker --force
 ```
 Step 9. Verifying Installation
 ```
