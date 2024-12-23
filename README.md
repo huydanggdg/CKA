@@ -119,6 +119,8 @@ export now="--force --grace-period 0"   # k delete pod x $now
 | ------------- | ------------- |
 | Failed to start docker container. Running "minikube delete" may fix it: boot lock: unable to open /tmp/juju-mke11f63b5835bf422927bf558fccac7a21a838f: permission denied  | ``` minikube delete ```  |
 | Error response from daemon: network 5e7828cee7f6faa0303467f726b1ed7f8cd9e01c6b00ecb954fa490bc3086851 not found Error: failed to start containers: multinode-demo-m02  | ``` minikube delete -p multinode-demo ```  |
+| unable to open /tmp/juju-mkb814c315fe9b7fabb439d6d58c5448fbb7853c: permission denied | ``` chmod 777 /tmp/ ```  |
+
 
 
 
