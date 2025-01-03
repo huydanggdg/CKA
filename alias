@@ -1,0 +1,7 @@
+alias kgp='k get po '
+alias kgs='k get svc '
+alias kgn='k get node '
+alias kgd='k get deploy '
+alias kn='config set-context  --current --namespace '
+alias ka='k apply -f '
+alias kr='k run --dry-run=client -oyaml --image '
